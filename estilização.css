@@ -1,74 +1,120 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f0f4f8;
-    color: #333;
-}
-header {
-    background-color: #5088ad;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-    font-size: 24px;
-}
-header nav {
-    margin-top: 15px;
-}
-header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-header nav a:hover {
-    color: #ddd;
-}
-section {
-    padding: 50px 20px;
-    margin: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-section h2 {
-    color: #5088ad;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-.cloud-type {
-    margin: 20px 0;
-}
-.cloud-type p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-.cloud-type img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-.back-to-top {
-    text-align: center;
-    margin-top: 30px;
-}
-
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
-img{
-    height: auto ;
-    width: auto;
-    border-radius: 20% ;
-    border: 2px solid cyan;
-    scale: 1px;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            padding-bottom: 60px;
+        }
+        
+        header {
+            background-color: #5088ad;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        header nav {
+            margin-top: 15px;
+        }
+        
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+            display: inline-block;
+        }
+        
+        header nav a:hover {
+            color: #ddd;
+        }
+        
+        section {
+            padding: 50px 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        section h2 {
+            color: #5088ad;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        .cloud-type {
+            margin: 20px 0;
+        }
+        
+        .cloud-type p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        /* Alteração principal: centralização da imagem */
+        .cloud-type .image-container {
+            text-align: center; /* Centraliza a imagem */
+            margin-top: 15px;
+        }
+        
+        .cloud-type img {
+            border-radius: 3%;
+            border: 2px solid cyan;
+            max-width: 100%;
+            height: auto;
+            display: inline-block; /* Permite centralização com text-align */
+        }
+        
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
 
+        @media (max-width: 768px) {
+            header nav a {
+                margin: 0 10px;
+                font-size: 15px;
+            }
+            
+            section {
+                padding: 30px 15px;
+                margin: 15px;
+            }
+            
+            section h2 {
+                font-size: 24px;
+            }
+            
+            .cloud-type p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+            
+            section {
+                padding: 25px 12px;
+                margin: 10px;
+            }
+        }
